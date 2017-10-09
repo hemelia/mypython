@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 NAT = 'ip nat inside source list ACL interface FastEthernet0/1 overload';
 NAT1 = NAT.replace('Fast' , 'Gigabit');
@@ -52,6 +52,10 @@ IPC = (int(IP[2]));
 IPD = (int(IP[3]));
 print("{:8}  {:8}  {:8}  {:8}".format(IP[0], IP[1], IP[2], IP[3]));
 print("{:08b}  {:08b}  {:08b}  {:08b}".format(int(IP[0]), IPB, IPC, IPD));
+
+num_list = [10, 2, 30, 100, 10, 50, 11, 30, 15, 7]
+word_list = ['python', 'ruby', 'perl', 'ruby', 'perl', 'python', 'ruby', 'perl']
+
 
 #d_keys = ['Protocol:', 'Prefix:', 'AD/Metric:','Next-Hop:','Last update:','Outbound Interface:'];
 #print(d_keys);
