@@ -35,8 +35,8 @@ print("{:<8}  {:<8}  {:<8}  {:<8}".format(E[0:8], E[8:16], E[16:24], E[24:32] ))
 print('Mask: ')
 print('/',MASK, sep='');
 MASKB = []
-for i in range(int(MASK)):
-        MASKB.append('1')
+for i in range(int(MASK)): # another way to get bits from mask:(2 involition^ mask(ex.30))-1= and convert to binary
+        MASKB.append('1')  # =bin((2 ** MASK)-1)
 for i in range(32-int(MASK)):
 	MASKB.append('0')
 MASKC = ''.join(MASKB)
